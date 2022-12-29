@@ -5,8 +5,6 @@ type Data = {
     name: string
 }
 
-// TODO what is dis?
-
 export default function handler(
     req: NextApiRequest,
     res: NextApiResponse<Data>
