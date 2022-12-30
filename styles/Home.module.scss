@@ -9,7 +9,172 @@
 
   .title {
     font-size: 33px;
-    padding-left: 14px;
   }
 
+  .buttonPrimary {
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--brand-green);
+    background-color: var(--brand-green);
+    padding: 8px 16px;
+    font-weight: 700;
+    font-size: 14px;
+  }
+
+  .buttonPrimary:hover {
+    background-color: white;
+
+  }
+
+  .buttonSecondary {
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--brand-green);
+    background-color: white;
+    padding: 8px 16px;
+    font-weight: 700;
+    font-size: 14px;
+  }
+
+  .buttonSecondary:hover {
+    background-color: var(--brand-green);
+  }
+
+  .textButton {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+  }
+
+  .row {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+
+  .alignItemsBaseline {
+    align-items: baseline
+  }
+
+  .col {
+    display: flex;
+    flex-flow: column;
+  }
+
+  .spaceBetween {
+    justify-content: space-between;
+  }
+
+  .width40 {
+    width: 40%
+  }
+
+  .width60 {
+    width: 60%
+  }
+
+  .secondaryText {
+    color: var(--auro-metal-saurus)
+  }
+
+  .searchBarWrapper {
+    border: 1px solid var(--light-gray);
+    box-shadow: 0 3px 24px rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+    width: 100%;
+  }
+
+  .searchBar {
+    border: none;
+    outline: none;
+    width: 100%;
+  }
+
+  .productLine {
+    border-bottom: 1px solid var(--light-gray);
+  }
+
+  .borderTop {
+    border-top: 1px solid var(--light-gray);
+  }
+
+  .dimensionsTag {
+    background-color: var(--cultured);
+    border-radius: 5px;
+    padding: 4px 10px;
+    margin: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .modal {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    background: white;
+    min-width: 790px;
+  }
+
+  .flexGrow1 {
+    flex-grow: 1
+  }
+
+  .flex {
+    display: flex
+  }
+
+  .fullWidth {
+    width: 100%;
+  }
+
+  .stickToBottom {
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+  }
+
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+  }
+
+  .modalMain {
+    position: absolute;
+    background: white;
+    height: 100%;
+    min-width: 970px;
+    top: 0;
+    right: 0;
+  }
+
+  .fontWeight400 {
+    font-weight: 400;
+  }
+
+  .fontWeight600 {
+    font-weight: 600;
+  }
+
+  .fontWeight700 {
+    font-weight: 700;
+  }
+
+  .colorBrandGreen {
+    color: var(--brand-green)
+  }
 }

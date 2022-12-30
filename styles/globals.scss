@@ -1,5 +1,6 @@
 @for $i from 0 through 250 {
   $valueMul2: $i * 2;
+  $value: $i;
   .m-l-#{$valueMul2} {
     margin-left: ($valueMul2 * 1px);
   }
@@ -54,12 +55,18 @@
   .gap-#{$valueMul2} {
     gap: ($valueMul2 * 1px);
   }
+  .font-#{$value} {
+    font-size: ($value *1px);
+  }
 }
 
 :root {
   --foreground: #fff;
   --font: #000;
   --brand-green: #23D899;
+  --light-gray: #D5D5D5;
+  --auro-metal-saurus: #707786;
+  --cultured: #F4F4F6;
 }
 
 
@@ -89,6 +96,36 @@ body {
 a {
   color: var(--brand-green);
   text-decoration: none;
+}
+
+select {
+  padding: 10px 14px;
+  margin: 4px 0;
+  border-radius: 5px;
+  position: relative;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  border: none;
+  background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIiIGhlaWdodD0iOCIgdmlld0JveD0iMCAwIDEyIDgiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik01Ljk5MTIzIDcuMDM1NTRMNS4yMjkyNSA2LjI3MzU1TDEwLjc3NTggMC43MjcwNTFMMTEuNTM3NyAxLjQ4OTA0TDUuOTkxMjMgNy4wMzU1NFoiIGZpbGw9IiMyM0Q4OTkiLz4KPHBhdGggZD0iTTUuNTQ2NSA3LjAzNTU0TDAgMS40ODkwNEwwLjc2MTk4NSAwLjcyNzA1MUw2LjMwODQ5IDYuMjczNTVMNS41NDY1IDcuMDM1NTRaIiBmaWxsPSIjMjNEODk5Ii8+Cjwvc3ZnPgo=) no-repeat right 12px top 50%;
+}
+
+input {
+  padding: 10px 14px;
+  margin: 4px 0;
+  border-radius: 5px;
+}
+
+select:required:invalid {
+  color: var(--auro-metal-saurus);
+}
+
+option[value=""][disabled] {
+  display: none;
+}
+
+option {
+  color: black;
 }
 
 @media (prefers-color-scheme: light) {
